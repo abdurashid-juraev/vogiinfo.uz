@@ -1,0 +1,137 @@
+.contact__ {
+  &wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 36px;
+    opacity: 0.9;
+    padding-left: 14px;
+
+  }
+
+  &subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    opacity: 0.9;
+    margin-bottom: 24px;
+    color: #8f939b;
+    padding-left: 14px;
+
+  }
+
+  &input_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 24px;
+    span {
+      padding-left: 14px;
+      color: #121E51;
+    }
+    svg {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      right: 20px;
+      bottom: 14px;
+    }
+
+    input, textarea {
+      margin-top: 4px;
+      padding: 14px;
+      border-radius: 10px;
+      color: #121E51;
+    }
+
+    textarea {
+      resize: none;
+      height: 200px;
+    }
+  }
+  &submit {
+    background: #203FEB;
+    border: 1px solid rgba(32, 63, 235, 0.1);
+    border-radius: 10px;
+    display: flex;
+    padding: 18px 32px;
+    width: fit-content;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -24px;
+
+  }
+  &card {
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+    border-radius: 12px;
+    background: #17286310;
+    margin-bottom: 24px;
+
+    .card__title {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 36px;
+      margin-bottom: 12px;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      color: rgba(23, 40, 99, 0.9);
+      margin-bottom: 12px;
+      transition: .3s ease-in-out;
+      width: fit-content;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+      &:hover {
+        color: #203FEB;
+        svg {
+          path {
+            stroke: #203FEB;
+          }
+        }
+
+      }
+      svg {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+        path {
+          transition: .3s ease-in-out;
+        }
+      }
+    }
+  }
+
+}
+
+.row {
+  & > * {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+body {
+  color: #172863;
+  font-family: "Manrope";
+}

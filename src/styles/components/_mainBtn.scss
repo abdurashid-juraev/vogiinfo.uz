@@ -1,0 +1,24 @@
+.main__btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 17px 32px;
+  background-color: #203feb;
+  border: 1px solid rgba(32, 63, 235, 0.1);
+  border-radius: 10px;
+  font-family: "Manrope";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: $colorWhite;
+  &:hover {
+    color: #fff;
+  }
+}
+.main__btn--white {
+  background-color: #fff;
+  color: $colorBlue;
+  &:hover {
+    color: #203feb;
+  }
+}

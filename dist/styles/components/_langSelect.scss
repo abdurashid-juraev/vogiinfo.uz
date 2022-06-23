@@ -1,0 +1,85 @@
+.selector {
+  position: relative;
+  display: inline-block;
+  @media (max-width: 992px) {
+    order: 3;
+    align-self: flex-start;
+  }
+  * {
+    font-family: "Manrope";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: $colorWhite;
+    text-transform: capitalize;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.selector__toggle {
+  display: inline-block;
+  position: relative;
+  color: #000;
+  &::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: url(../images/svg/down-arrow.svg) no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: -18px;
+    top: 5px;
+    transition: all 0.3s;
+  }
+}
+.open--lang {
+  &::after {
+    transform: rotateX(180deg);
+  }
+}
+.selector__list {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: -15px;
+  right: 0;
+  padding: 10px 0;
+  margin-top: 15px;
+  min-width: 70px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 6px;
+  transform: translateY(15px);
+  transition: all 0.2s;
+  box-shadow: 0 10px 40px 10px rgba(189, 191, 197, 0.15);
+  @media (max-width: 992px) {
+    left: 0;
+  }
+
+  a {
+    display: inline-block;
+    width: 100%;
+    text-indent: 16px;
+    color: #000;
+    line-height: 1.6;
+    &:hover {
+      color: blue;
+    }
+  }
+  .open & {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  li {
+    button {
+      display: inline-block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}

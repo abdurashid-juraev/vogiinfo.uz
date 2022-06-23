@@ -1,0 +1,37 @@
+.info__card {
+  display: block;
+  padding: 12px 15px 15px 15px;
+  background: #ffffff;
+  border: 1px solid rgba(18, 30, 81, 0.1);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: #121e51;
+    .news__card-time {
+      color: rgba(255, 255, 255, 0.7);
+      span svg path {
+        fill: rgba(255, 255, 255, 1);
+      }
+    }
+    .news__card-title {
+      color: #ffffff;
+    }
+    .info__card-text {
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+}
+.info__card-text {
+  font-family: "Manrope";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.02em;
+  color: rgba(18, 30, 81, 0.7);
+  margin-top: 6px;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

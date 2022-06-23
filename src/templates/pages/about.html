@@ -1,0 +1,99 @@
+{% set title = "about" %}
+
+{% extends "main.tpl" %}
+
+{% block content %}
+
+{% include "components/header.html" %}
+<main class="main">
+  <div class="container">
+    <div class="link__block">
+      <a href="index.html" class="info__link">Домашная страница</a><span class="tab__active"></span>
+    </div>
+    <div class="row">
+      <div class=" col-xl-4 col-12" data-aos="fade-right" data-aos-duration="1400">
+        <nav class="tab__nav">
+          <ul>
+            <li>
+              <a class="tab__nav-link active">О ВОГ</a>
+            </li>
+            <li>
+              <a class="tab__nav-link">документы</a>
+            </li>
+            <li>
+              <a class="tab__nav-link">РУКОВОДСТВО ВОГ</a>
+            </li>
+            <li>
+              <a class="tab__nav-link">история общества</a>
+            </li>
+            <li>
+              <a class="tab__nav-link">региональные отделения </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class=" col-xl-8 col-12" data-aos="fade-left" data-aos-duration="1400">
+        <div class="tab__content-item">
+          <h2 class="content__title">Всеузбекское организация глухих(ВОГ)</h2>
+          <div class="tab__content-el">
+            <div class="tab__el-inner"><img src="./images/svg/time-g.svg" alt=""><span>09:41</span></div>
+            <div class="tab__el-inner">
+              <div><img src="./images/svg/eye.svg" alt=""><span>123</span>
+              </div>
+            </div>
+          </div>
+          <div class="tab__content-info">
+            <p>
+              Общероссийская общественная организация инвалидов «Всеузбекское общество глухих» (ВОГ) — самая
+              многочисленная и старейшая в России общественная организация инвалидов по слуху.
+            </p>
+            <p>
+              ВОГ было образовано 25 сентября 1926 года.
+            </p>
+            <p>
+              Главной задачей ВОГ является выражение и защита прав и законных интересов
+              граждан РФ с нарушениями слуха, их социальная реабилитация и интеграция в общество. В центре внимания
+              ВОГ – вопросы реализации гражданских прав, доступности информации и различных услуг, получения
+              образования и профессиональной подготовки, занятости и трудоустройства, качественного медицинского
+              обслуживания и социального обеспечения, доступности объектов социальной и транспортной инфраструктуры,
+              а также учреждений культуры.
+            </p>
+            <img class="tab__content-img" src="./images/png/tab-img1.png" alt="">
+            <p>
+              По данным статистического отчета за 2019 год, численность членов ВОГ
+              составляет 76164 человека (всего в России более 150 тыс. глухих носителей жестового языка). ВОГ имеет
+              82 региональных, 615 местных отделений на всей территории Российской Федерации. Общество имеет в своём
+              составе 170 региональных и местных учреждений социально-культурного назначения.
+            </p>
+          </div>
+          <div class="tab__social-title">Поделится c:</div>
+          <ul class="tab__content-social">
+            <li class="tab__social-item">
+              <a class="tab__social-link" href="#!">
+                <img src="./images/svg/facebook-g.svg" alt="">
+              </a>
+            </li>
+            <li class="tab__social-item">
+              <a class="tab__social-link" href="#!">
+                <img src="./images/svg/instagram-g.svg" alt="">
+              </a>
+            </li>
+            <li class="tab__social-item">
+              <a class="tab__social-link" href="#!">
+                <img src="./images/svg/twitter-g.svg" alt="">
+              </a>
+            </li>
+            <li class="tab__social-item">
+              <a class="tab__social-link" href="#!">
+                <img src="./images/svg/telegram-g.svg" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+{% include "components/footer.html" %}
+{% endblock %}
